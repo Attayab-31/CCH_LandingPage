@@ -1,0 +1,217 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header Styles */
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+header nav {
+    margin-top: 10px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #e8491d;
+}
+
+header nav a.btn {
+    background: #e8491d;
+    padding: 5px 20px;
+    border-radius: 25px;
+    transition: background 0.3s;
+}
+
+header nav a.btn:hover {
+    background: #333;
+    color: #fff;
+}
+
+/* Hero Section Styles */
+#hero {
+    background: url('images/hero-bg.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+#hero h2 {
+    margin: 0;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+#hero p {
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+#hero a.btn {
+    background: #fff;
+    color: #333;
+    padding: 5px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+#hero a.btn:hover {
+    background: #e8491d;
+    color: #fff;
+}
+
+/* Features Section Styles */
+#features {
+    background: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+#features h2 {
+    margin-bottom: 40px;
+    font-size: 2em;
+}
+
+.feature-box {
+    display: inline-block;
+    width: 30%;
+    margin: 0 1%;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background: #f9f9f9;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.feature-box img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.feature-box h3 {
+    margin: 20px 0 10px;
+}
+
+.feature-box p {
+    color: #666;
+}
+
+/* Testimonials Section Styles */
+#testimonials {
+    background: #333;
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+#testimonials h2 {
+    margin-bottom: 40px;
+    font-size: 2em;
+}
+
+#testimonials blockquote {
+    margin: 20px auto;
+    max-width: 600px;
+    font-style: italic;
+    color: #ccc;
+}
+
+/* CTA Section Styles */
+#cta {
+    background: #e8491d;
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+#cta h2 {
+    margin: 0 0 20px;
+    font-size: 2em;
+}
+
+#cta a.btn {
+    background: #333;
+    color: #fff;
+    padding: 5px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+#cta a.btn:hover {
+    background: #000;
+}
+
+/* Footer Styles */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer nav {
+    margin-top: 10px;
+}
+
+footer nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: color 0.3s;
+}
+
+footer nav a:hover {
+    color: #e8491d;
+}
+
+/* Responsive Styles for different screens */
+@media (max-width: 768px) {
+    .feature-box {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    header nav {
+        flex-direction: column;
+    }
+
+    header nav a {
+        margin: 10px 0;
+    }
+}
